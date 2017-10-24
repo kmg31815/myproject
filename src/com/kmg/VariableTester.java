@@ -16,17 +16,22 @@ public class VariableTester {
 		System.out.println(!pass);
 		System.out.println(pass);
 		
-		// 紙s上抄 new String 地址
+		
 		String s = new String("Hello");
 		System.out.println(s);
 		
-		// Random 指亂數
 		Random r = new Random();
 		System.out.println(r.nextInt(6)+1);
 		
 		System.out.println(3!=2);
 		System.out.println(3==2);
-		System.out.println(3>2);
+		System.out.println(3>=2);
+		
+		String k = new String("hello");
+		int len = k.length();
+		System.out.println("len:" + len);
+		System.out.println(k.charAt(0));
+		System.out.println(k.charAt(1));
 
 
 	}
