@@ -40,6 +40,11 @@ public class Hello {
 		int age = Integer.parseInt(line);
 		System.out.println(age>25);
 		
+		String data = "123";
+		int n = Integer.parseInt(data);
+		
+		String mydata = String.valueOf(n);
+		
 		
 	}
 

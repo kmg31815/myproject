@@ -34,6 +34,7 @@ public class VariableTester {
 		System.out.println(k.charAt(1));
 
 
+
 	}
 
 }
