@@ -4,17 +4,17 @@ public class Change {
 
 	public static void main(String[] args) {
 		int n[] = { 51, 23, 6, 65, 15 };
-		for (int i = 0; i < n.length; i++) {
-			for (int j = i + 1; j < (n.length)-1 ; j++) {
-				int a = n[i];
-				int b = n[j];
-				if(b<a){
-					int tmp = a;
-					a = b;
-					b = tmp;
+		for (int i = 0; i < n.length - 1; i++) {
+			for (int j = i + 1; j < n.length; j++) {
+				if (n[j] < n[i]) {
+					int tmp = n[i];
+					n[i] = n[j];
+					n[j] = tmp;
 				}
-				System.out.print(n[i]+" ");
 			}
+		}
+		for (int k : n) {
+			System.out.print(k+" ");
 		}
 	}
 
