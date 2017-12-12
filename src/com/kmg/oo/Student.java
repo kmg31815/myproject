@@ -7,11 +7,23 @@ public class Student {
 	int science;
 	String name;
 
-	public Student(String name, int c, int e, int m, int s) {
-		chinese = c;
-		english = e;
-		math = m;
-		science = s;
+	// public Student(String n, int c, int e, int m, int s) {
+	//	 name = n;
+	//	 chinese = c;
+	//	 english = e;
+	//	 math = m;
+	//	 science = s;
+	// }
+	public Student(String name, int chinese, int english, int math, int science) {
+		this.name = name;
+		this.chinese = chinese;
+		this.english = english;
+		this.math = math;
+		this.science = science;
+	}
+
+	public Student(String name) {
+		this.name = name;
 	}
 
 	public void print() {
