@@ -21,53 +21,48 @@ public class GameTester {
 				if (pos / col < row - 1) {
 					System.out.println("向下");
 					pos = pos + col;
-					System.out.println(pos);
 					hp = hp - 5;
-				}else{
+				} else {
 					hp = hp - 30;
 				}
-				System.out.println(hp);
+				System.out.println("目前位置:"+pos);
+				System.out.println("目前HP:" + hp);
 				break;
 			case 4:
 				if (pos % col > 0) {
 					System.out.println("向左");
 					pos = pos - 1;
-					System.out.println(pos);
 					hp = hp - 5;
-				}else{
+				} else {
 					hp = hp - 30;
 				}
-				System.out.println(hp);
+				System.out.println("目前位置:"+pos);
+				System.out.println("目前HP:" +hp);
 				break;
 			case 6:
 				if (pos % col < col - 1) {
 					System.out.println("向右");
 					pos = pos + 1;
-					System.out.println(pos);
 					hp = hp - 5;
-				}else{
+				} else {
 					hp = hp - 30;
 				}
-				System.out.println(hp);
+				System.out.println("目前位置:"+pos);
+				System.out.println("目前HP:" +hp);
 				break;
 			case 8:
 				if (pos / col > 0) {
 					System.out.println("向上");
 					pos = pos - col;
-					System.out.println(pos);
 					hp = hp - 5;
-				}else{
+				} else {
 					hp = hp - 30;
 				}
-				System.out.println(hp);
-				break;
-			case 0:
-				System.out.println("Game Over!");
-				break;
-			default:
-				System.out.println("錯誤!");
+				System.out.println("目前位置:"+pos);
+				System.out.println("目前HP:" +hp);
 				break;
 			}
+			
 		}
 	}
 }
