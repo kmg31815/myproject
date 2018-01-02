@@ -17,7 +17,8 @@ public class Tester {
 		System.out.println("野比大雄:" + avg);
 
 		GraduateStudent gstu = new GraduateStudent();
-		gstu.chinese = 100;
+		gstu.pass = 100;
+		gstu.print();
 	}
 
 }
