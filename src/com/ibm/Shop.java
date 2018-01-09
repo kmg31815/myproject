@@ -31,6 +31,7 @@ public class Shop {
 				break;
 			}
 		}
+		//not finish
 	}
 
 }

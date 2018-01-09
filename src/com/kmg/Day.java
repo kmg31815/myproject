@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Day {
 
 	public static void main(String[] args) {
+		System.out.println("請輸入天數:");
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
 		int day = Integer.parseInt(line);
