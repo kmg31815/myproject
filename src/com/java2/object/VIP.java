@@ -1,5 +1,7 @@
 package com.java2.object;
 
-public class VIP {
+public class VIP extends SpecialCustomer {
+	public VIP(int amount) {
 
+	}
 }
