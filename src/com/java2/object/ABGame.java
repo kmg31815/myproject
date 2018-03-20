@@ -8,6 +8,7 @@ public class ABGame {
 		String secret = "9487";
 		int a = 0;
 		int b = 0;
+		int k = 1;
 		while (a != 4) {
 			a = 0;
 			b = 0;
@@ -31,6 +32,10 @@ public class ABGame {
 				}
 			}
 			System.out.println(a + "A" + b + "B");
+			if (k > 5) {
+				System.out.println("太多次ㄌㄅ~");
+			}
+			k++;
 		}
 	}
 
