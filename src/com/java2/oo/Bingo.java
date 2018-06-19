@@ -12,7 +12,7 @@ public class Bingo {
 				n[i][j] = r.nextInt((24) + 1);
 				System.out.print(n[i][j] + "\t");
 			}
-			System.out.println();
+			System.out.println("");
 		}
 	}
 
