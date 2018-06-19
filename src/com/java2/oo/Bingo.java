@@ -9,7 +9,7 @@ public class Bingo {
 		Random r = new Random();
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5; j++) {
-				n[i][j] = r.nextInt((24) + 1);
+				n[i][j] = r.nextInt(24) + 1;
 				System.out.print(n[i][j] + "\t");
 			}
 			System.out.println();
