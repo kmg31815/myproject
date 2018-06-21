@@ -16,11 +16,11 @@ public class VendingMachine {
 			System.out.println(drink.getid() + "\t" + drink.getName() + "\t" + drink.getprice());
 		}
 		Scanner scanner = new Scanner(System.in);
-		int data = -1;
+		int k = -1;
 		int money = 0;
-		while (data != 0) {
-			data = scanner.nextInt();
-			switch (data) {
+		while (k != 0) {
+			k = scanner.nextInt();
+			switch (k) {
 			case 0:
 				break;
 			case 5:
@@ -36,32 +36,35 @@ public class VendingMachine {
 				System.out.println("現在金額:" + money);
 				break;
 			case 1:
-				money = money - 25;
+				Drink drink = drinks.get(k-1);
+				money = money - drink.getprice();
 				if (money >= 0) {
 					System.out.println("現在金額:" + money);
 					System.out.println("this is your Coke~");
 				} else {
-					money = money + 25;
+					money = money + drink.getprice();
 					System.out.println("餘額不足,請再投錢");
 				}
 				break;
 			case 2:
-				money = money - 30;
+				Drink drink1 = drinks.get(k-1);
+				money = money - drink1.getprice();
 				if (money >= 0) {
 					System.out.println("現在金額:" + money);
 					System.out.println("this is your Juice~");
 				} else {
-					money = money + 30;
+					money = money + drink1.getprice();
 					System.out.println("餘額不足,請再投錢");
 				}
 				break;
 			case 3:
-				money = money - 20;
+				Drink drink2 = drinks.get(k-1);
+				money = money - drink2.getprice();
 				if (money >= 0) {
 					System.out.println("現在金額:" + money);
 					System.out.println("this is your Sprite~");
 				} else {
-					money = money + 20;
+					money = money + drink2.getprice();
 					System.out.println("餘額不足,請再投錢");
 				}
 				break;
